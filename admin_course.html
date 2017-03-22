@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>Aprender Bootstrap y Codeigniter</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font  Awesome Icons-->
+    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Graduate|Pacifico" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!-- .navbar-toggle -->
+                <a class="navbar-brand" href="">
+                    <img src="assets/img/logo.png" alt="Aprenden Bootstrap 3 y Codeigniter">
+                </a><!-- .navbar-brand -->
+            </div><!-- .navbar-header -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jonathan Duran S <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href=""><i class="fa fa-graduation-cap"></i> Administrar curso</a></li>
+                            <li><a href=""><i class="fa fa-user"></i> Editar Perfil</a></li>
+                            <li><a href=""><i class="fa fa-sign-out"></i> Salir</a></li>
+                        </ul><!-- dropdown-menu -->
+                    </li><!-- .dropdown -->
+                </ul><!-- .nav navbar-nav navbar-right -->
+            </div><!-- .collapse navbar-collapse -->
+        </div><!-- .container -->
+    </nav><!-- .navbar -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- TITLE & ENROLL -->
+    <section id="title-enroll">
+        <div class="jumbotron">
+            <div class="container-fluid text-center">
+                <h1>Aprender Bootstrap 3 y CodeIgniter</h1>
+                <p>Aprende paso a paso tus propias <strong>Aplicaciones Web</strong> y conviertete en un <strong>Ninja Developer</strong></p>
+            </div><!-- .container-fluid -->
+        </div><!-- .jumbotron -->
+    </section><!-- #title-enroll -->
+    <!-- END TITLE & ENROLL -->
+
+    <!-- ADMIN COURSE -->
+    <section class="wrap" id="admin-course">
+      <div class="container">
+        <h1>Adminitración del Curso</h1>
+        <p class="lead">Aquí podrás añadir nuevas secciones y sus respectivas clases, así como editar o eliminar las ya existentes.</p>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <p>
+              <a id="btnTabAdmin" href="#form-add-section" aria-control="form-add-section" data-toggle="tab" class="btn btn-info">Añadir Sección</a>
+            </p>
+            <!-- NAV TABS -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li id="tabAdmin1" role="presentation" class="active">
+                <a href="#form-list" aria-controls="form-list" data-toggle="tab" role="tab">Editar</a>
+              </li><!-- presentation -->
+              <li id="tabAdmin2" role="presentation">
+                <a href="#form-add-section" aria-controls="form-add-section" data-toggle="tab" role="tab">Sección</a>
+              </li><!-- presentation -->
+              <li id="tabAdmin3" role="presentation">
+                <a href="#form-add-lecture" aria-controls="form-add-lecture" data-toggle="tab" role="tab">Clase</a>
+              </li><!-- presentation -->
+            </ul><!-- nav nav-tabs -->
+            <!-- END NAV TABS -->
+            <br>
+            <!-- TAB CONTENT -->
+            <div class="tab-content">
+              <div role="tabpanel" class="panel panel-primary tab-pane active" id="form-list">
+
+                <!-- SECTION COURSE -->
+                  <div class="panel-heading">
+                    Sección 1: Introducción <span class="pull-right"><a href="">Añadir Clase</a> | <a href="">Editar</a> | <a href="">Eliminar</a></span>
+                  </div><!-- panel-heading -->
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <i class="fa fa-play-circle"></i>Clases 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<small class="text-primary">>(02:58)<</small> <span class="pull-right"><a href="#">Editar</a> | <a href="#">Eliminar</a></span>
+                    </li><!-- .list-group-item -->
+                    <li class="list-group-item">
+                      <i class="fa fa-play-circle"></i>Clases 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<small class="text-primary">>(02:58)<</small> <span class="pull-right"><a href="#">Editar</a> | <a href="#">Eliminar</a></span>
+                    </li><!-- .list-group-item -->
+                    <li class="list-group-item">
+                      <i class="fa fa-play-circle"></i>Clases 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<small class="text-primary">>(02:58)<</small> <span class="pull-right"><a href="#">Editar</a> | <a href="#">Eliminar</a></span>
+                    </li><!-- .list-group-item -->
+                    <li class="list-group-item">
+                      <i class="fa fa-play-circle"></i>Clases 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<small class="text-primary">>(02:58)<</small> <span class="pull-right"><a href="#">Editar</a> | <a href="#">Eliminar</a></span>
+                    </li><!-- .list-group-item -->
+                    <li class="list-group-item">
+                      <i class="fa fa-play-circle"></i>Clases 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<small class="text-primary">>(02:58)<</small> <span class="pull-right"><a href="#">Editar</a> | <a href="#">Eliminar</a></span>
+                    </li><!-- .list-group-item -->
+                  </ul><!-- .list-group -->
+                <!-- END SECTION COURSE -->
+
+              </div><!-- #form-list -->
+              <div role="tabpanel" class="panel panel-default tab-pane" id="form-add-section">
+                <div class="panel-body">
+                  <h3>Añadir nueva seccion</h3>
+                  <form>
+                    <div class="form-group">
+                      <label for="inputSectionTitle">Titulo de la  Seccion</label>
+                      <input type="text" class="form-control" id="inputSectionTitle" placeholder="Escribe el titulo de la seccion..." name="" value="">
+                    </div><!-- .form-group -->
+                    <button type="submit" class="btn btn-success" name="button">Añadir</button> o
+                    <a href="">Cancelar</a>
+                  </form>
+                </div><!-- .panel-body -->
+              </div><!-- #form-add-section -->
+              <div role="tabpanel" class="panel panel-default tab-pane" id="form-add-lecture">
+                <div class="panel-body">
+                  <h3>Añadir nueva clase</h3>
+                  <form>
+                    <div class="form-group">
+                      <label for="inputlectureTitle">Titulo:</label>
+                      <input type="text" class="form-control" id="inputlectureTitle" placeholder="Escribe el titulo de la leccion">
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                      <label for="inputLectureDescription">Descripcion:</label>
+                      <textarea class="form-control" id="inputLectureDescription" placeholder="Escribe la descripcion de esta lección" rows="3"></textarea>
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                      <label for="inputlectureVideo">URL del Video:</label>
+                      <input type="text" class="form-control" id="inputlectureVideo" placeholder="Escribe la url de Youtube del video">
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                      <label for="inputlectureDuration">Duracion de la leccion:</label>
+                      <input type="text" class="form-control" id="inputlectureDuration" placeholder="Escribe los minutos y segundos que dura el video con formato MM:SS. Ej. 05:35">
+                    </div><!-- .form-group -->
+                    <button type="submit" class="btn btn-success">Añadir</button> o
+                    <a href="">Finalizar</a>
+                  </form>
+                </div><!-- .panel-body -->
+              </div><!-- #form-add-lenture -->
+            </div><!-- .tab-content -->
+            <!-- END TAB CONTENT -->
+          </div><!-- col-sm-8 col-sm-offset-2 -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </section><!-- .wrap #admin-course -->
+    <!-- END ADMIN COURSE -->
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container-fluid text-center">
+            <p>
+                BootIgniter - Aprende Bootstrap 3 y Codeigniter 2015 | Made with <i class="fa fa-heart"></i> by <a href="">Jonathan Duran</a>
+            </p>
+        </div><!-- container-fluid .text-center -->
+    </footer><!-- footer -->
+    <!-- END FOOTER -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $("#btnTabAdmin").click(function(){
+        $("#tabAdmin1").removeClass();
+        $("#tabAdmin3").removeClass();
+        $("#tabAdmin2").removeClass().addClass("active");
+      })
+    </script>
+  </body>
+</html>
